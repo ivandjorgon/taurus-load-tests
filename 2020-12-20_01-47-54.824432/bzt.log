@@ -1,0 +1,238 @@
+[2020-12-20 01:47:54,737 INFO root] Taurus CLI Tool v1.15.1
+[2020-12-20 01:47:54,738 DEBUG root] Build: 13973 Fri Oct 30 09:16:46 UTC 2020
+[2020-12-20 01:47:54,738 DEBUG root] Extended git info:  3fecb4b9 Release 1.15.1 (#1420)
+[2020-12-20 01:47:54,738 DEBUG root] Command-line options: {'log': '/tmp/bzt_qsrt6dtv.log', 'option': None, 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': []}
+[2020-12-20 01:47:54,738 DEBUG root] Python: CPython 3.6.9
+[2020-12-20 01:47:54,738 DEBUG root] OS: uname_result(system='Linux', node='ivan-VirtualBox', release='5.4.0-58-generic', version='#64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020', machine='x86_64', processor='x86_64')
+[2020-12-20 01:47:54,739 INFO root] Starting with configs: ['taurus_jmeter_script_blazedemo.yml']
+[2020-12-20 01:47:54,739 DEBUG root] Using personal config: /home/ivan/.bzt-rc
+[2020-12-20 01:47:54,739 INFO Engine] Configuring...
+[2020-12-20 01:47:54,761 DEBUG Engine] Base configs list: ['/usr/local/lib/python3.6/dist-packages/bzt/resources/10-base-config.yml']
+[2020-12-20 01:47:54,761 DEBUG Engine.Configuration] Configs: ['/usr/local/lib/python3.6/dist-packages/bzt/resources/10-base-config.yml']
+[2020-12-20 01:47:54,761 DEBUG Engine.Configuration] Reading /usr/local/lib/python3.6/dist-packages/bzt/resources/10-base-config.yml as YAML
+[2020-12-20 01:47:54,793 DEBUG Engine] User configs list: ['/home/ivan/.bzt-rc', 'taurus_jmeter_script_blazedemo.yml']
+[2020-12-20 01:47:54,793 DEBUG Engine.Configuration] Configs: ['/home/ivan/.bzt-rc', 'taurus_jmeter_script_blazedemo.yml']
+[2020-12-20 01:47:54,794 DEBUG Engine.Configuration] Reading /home/ivan/.bzt-rc as YAML
+[2020-12-20 01:47:54,798 DEBUG Engine.Configuration] Reading taurus_jmeter_script_blazedemo.yml as YAML
+[2020-12-20 01:47:54,808 DEBUG Engine.Configuration] Configs: ['/home/ivan/.bzt-rc', 'taurus_jmeter_script_blazedemo.yml']
+[2020-12-20 01:47:54,809 DEBUG Engine.Configuration] Reading /home/ivan/.bzt-rc as YAML
+[2020-12-20 01:47:54,812 DEBUG Engine.Configuration] Reading taurus_jmeter_script_blazedemo.yml as YAML
+[2020-12-20 01:47:54,824 DEBUG Engine] Requesting updates info: https://gettaurus.org/updates/?version=1.15.1&installID=linux-80027a07efa
+[2020-12-20 01:47:54,824 INFO Engine] Artifacts dir: /home/ivan/taurus/2020-12-20_01-47-54.824432
+[2020-12-20 01:47:54,824 DEBUG HTTPClient] Making HTTP request GET https://gettaurus.org/updates/?version=1.15.1&installID=linux-80027a07efa
+[2020-12-20 01:47:54,825 DEBUG Engine] New artifact filename: /home/ivan/taurus/2020-12-20_01-47-54.824432/effective
+[2020-12-20 01:47:54,827 DEBUG Engine.Configuration] Dumping YAML config into /home/ivan/taurus/2020-12-20_01-47-54.824432/effective.yml
+[2020-12-20 01:47:54,850 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): gettaurus.org:443
+[2020-12-20 01:47:54,861 DEBUG Engine.Configuration] Dumping JSON config into /home/ivan/taurus/2020-12-20_01-47-54.824432/effective.json
+[2020-12-20 01:47:54,862 DEBUG Engine] New artifact filename: /home/ivan/taurus/2020-12-20_01-47-54.824432/merged.yml
+[2020-12-20 01:47:54,863 DEBUG Engine.Configuration] Dumping YAML config into /home/ivan/taurus/2020-12-20_01-47-54.824432/merged.yml
+[2020-12-20 01:47:54,868 DEBUG Engine] New artifact filename: /home/ivan/taurus/2020-12-20_01-47-54.824432/merged.json
+[2020-12-20 01:47:54,869 DEBUG Engine.Configuration] Dumping JSON config into /home/ivan/taurus/2020-12-20_01-47-54.824432/merged.json
+[2020-12-20 01:47:54,869 DEBUG Engine] Add existing artifact (move=False): taurus_jmeter_script_blazedemo.yml
+[2020-12-20 01:47:54,869 DEBUG Engine] Copying taurus_jmeter_script_blazedemo.yml to /home/ivan/taurus/2020-12-20_01-47-54.824432/taurus_jmeter_script_blazedemo.yml
+[2020-12-20 01:47:54,870 DEBUG Engine] Set PYTHONPATH to '/home/ivan/.bzt/python-packages/3.6.9' + '/home/ivan/taurus/2020-12-20_01-47-54.824432/python-packages/3.6.9' + 
+[2020-12-20 01:47:54,870 DEBUG Engine] Content of user packages dir: %s
+[2020-12-20 01:47:54,872 DEBUG Engine] OS env: OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+[2020-12-20 01:47:54,872 DEBUG Engine] OS env: TAURUS_ARTIFACTS_DIR=/home/ivan/taurus/2020-12-20_01-47-54.824432
+[2020-12-20 01:47:54,872 DEBUG root] Closing log handler: /tmp/bzt_qsrt6dtv.log
+[2020-12-20 01:47:54,873 DEBUG root] Switched writing logs to /home/ivan/taurus/2020-12-20_01-47-54.824432/bzt.log
+[2020-12-20 01:47:54,873 DEBUG root] Linting config
+[2020-12-20 01:47:54,880 INFO Engine] Preparing...
+[2020-12-20 01:47:54,880 DEBUG Engine] Module config: consolidator {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'}
+[2020-12-20 01:47:54,880 DEBUG root] Importing module: bzt.modules.aggregator
+[2020-12-20 01:47:55,049 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/aggregator.py'>
+[2020-12-20 01:47:55,049 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2020-12-20 01:47:55,049 DEBUG Engine] Module config: monitoring {'class': 'bzt.modules.monitoring.Monitoring'}
+[2020-12-20 01:47:55,049 DEBUG root] Importing module: bzt.modules.monitoring
+[2020-12-20 01:47:55,051 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/monitoring.py'>
+[2020-12-20 01:47:55,051 DEBUG Engine] Module config: local {'class': 'bzt.modules.provisioning.Local'}
+[2020-12-20 01:47:55,051 DEBUG root] Importing module: bzt.modules.provisioning
+[2020-12-20 01:47:55,052 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/provisioning.py'>
+[2020-12-20 01:47:55,052 DEBUG Engine] Module config: jmeter {'class': 'bzt.modules.jmeter.JMeterExecutor', 'protocol-handlers': {'http': 'bzt.jmx.http.HTTPProtocolHandler'}, 'plugins': ['jpgc-casutg', 'jpgc-dummy', 'jpgc-ffw', 'jpgc-fifo', 'jpgc-functions', 'jpgc-json', 'jpgc-perfmon', 'jpgc-prmctl', 'jpgc-tst'], 'properties': {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': ''}}
+[2020-12-20 01:47:55,052 DEBUG root] Importing module: bzt.modules.jmeter
+[2020-12-20 01:47:55,078 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/jmeter.py'>
+[2020-12-20 01:47:55,079 DEBUG Engine.local] Preparing executor: jmeter/140586377596320
+[2020-12-20 01:47:55,079 DEBUG Engine] New artifact filename: /home/ivan/taurus/2020-12-20_01-47-54.824432/jmeter.log
+[2020-12-20 01:47:55,079 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2020-12-20 01:47:55,079 DEBUG Engine.jmeter] Port 4445 is free
+[2020-12-20 01:47:55,080 DEBUG Engine.jmeter] Using port 4445 for management
+[2020-12-20 01:47:55,080 DEBUG Engine] New artifact filename: /home/ivan/taurus/2020-12-20_01-47-54.824432/requests.jmx
+[2020-12-20 01:47:55,080 DEBUG root] Importing module: bzt.jmx.http
+[2020-12-20 01:47:55,081 DEBUG root] Loading class: 'HTTPProtocolHandler' from <module 'bzt.jmx.http' from '/usr/local/lib/python3.6/dist-packages/bzt/jmx/http.py'>
+[2020-12-20 01:47:55,084 DEBUG JMeterScenarioBuilder] Saving JMX to: /home/ivan/taurus/2020-12-20_01-47-54.824432/requests.jmx
+[2020-12-20 01:47:55,085 DEBUG Engine.jmeter] Additional system properties {'sun.net.inetaddr.ttl': 0}
+[2020-12-20 01:47:55,085 DEBUG Engine] New artifact filename: /home/ivan/taurus/2020-12-20_01-47-54.824432/system.properties
+[2020-12-20 01:47:55,085 DEBUG Engine.jmeter] Additional properties: {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': '', 'jmeterengine.nongui.port': 4445, 'jmeterengine.nongui.maxport': 4445, 'jmeter.save.saveservice.timestamp_format': 'ms', 'sampleresult.default.encoding': 'UTF-8', 'user.classpath': '/home/ivan/taurus/2020-12-20_01-47-54.824432:/home/ivan/taurus/2020-12-20_01-47-54.824432'}
+[2020-12-20 01:47:55,086 DEBUG Engine] New artifact filename: /home/ivan/taurus/2020-12-20_01-47-54.824432/jmeter-bzt.properties
+[2020-12-20 01:47:55,086 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2020-12-20 01:47:55,086 DEBUG root] Executing shell: ['java', '-version'] at .
+[2020-12-20 01:47:55,156 DEBUG Engine.jmeter.JavaVM] JavaVM output: openjdk version "11.0.9.1" 2020-11-04
+OpenJDK Runtime Environment (build 11.0.9.1+1-Ubuntu-0ubuntu1.18.04)
+OpenJDK 64-Bit Server VM (build 11.0.9.1+1-Ubuntu-0ubuntu1.18.04, mixed mode, sharing)
+
+[2020-12-20 01:47:55,157 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2020-12-20 01:47:55,158 DEBUG Engine.jmeter.JMeter] Trying JMeter..
+[2020-12-20 01:47:55,159 DEBUG root] Executing shell: ['/home/ivan/.bzt/jmeter-taurus/5.2.1/bin/jmeter.sh', '-j', '/tmp/jmeter03xj8hbblog', '--version'] at .
+[2020-12-20 01:47:55,509 DEBUG urllib3.connectionpool] https://gettaurus.org:443 "GET /updates/?version=1.15.1&installID=linux-80027a07efa HTTP/1.1" 200 40
+[2020-12-20 01:47:55,511 DEBUG Engine] Taurus updates info: {'latest': '1.15.1', 'needsUpgrade': False}
+[2020-12-20 01:47:55,511 DEBUG Engine] Installation is up-to-date
+[2020-12-20 01:47:56,589 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) |
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 5.2.1
+
+Copyright (c) 1999-2019 The Apache Software Foundation
+
+ / 
+[2020-12-20 01:47:56,593 DEBUG Engine] New artifact filename: /home/ivan/taurus/2020-12-20_01-47-54.824432/kpi.jtl
+[2020-12-20 01:47:56,595 DEBUG Engine] New artifact filename: /home/ivan/taurus/2020-12-20_01-47-54.824432/error.jtl
+[2020-12-20 01:47:56,596 DEBUG Engine.jmeter.LoadSettingsProcessor] Load: LoadSpec(concurrency=10, throughput=None, ramp_up=40.0, hold=120.0, iterations=0, duration=160.0, steps=None)
+[2020-12-20 01:47:56,599 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (Thread Group) to ConcurrencyThreadGroup and apply load parameters
+[2020-12-20 01:47:56,600 DEBUG Engine] New artifact filename: /home/ivan/taurus/2020-12-20_01-47-54.824432/modified_requests.jmx
+[2020-12-20 01:47:56,601 DEBUG JMX] Saving JMX to: /home/ivan/taurus/2020-12-20_01-47-54.824432/modified_requests.jmx
+[2020-12-20 01:47:56,603 DEBUG root] Executing shell: ['/home/ivan/.bzt/jmeter-taurus/5.2.1/bin/PluginsManagerCMD.sh', 'install-for-jmx', '/home/ivan/taurus/2020-12-20_01-47-54.824432/modified_requests.jmx'] at .
+[2020-12-20 01:47:59,247 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /home/ivan/taurus/2020-12-20_01-47-54.824432/modified_requests.jmx
+2020-12-20 01:47:57,879 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
+2020-12-20 01:47:57,979 INFO o.j.r.JARSourceHTTP: Found cached repo
+2020-12-20 01:47:58,395 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.1, jpgc-casutg=2.9, jpgc-dummy=0.4, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=1.3, jpgc-tst=2.5, jmeter-core=5.2.1, jmeter-ftp=5.2.1, jmeter-http=5.2.1, jmeter-jdbc=5.2.1, jmeter-jms=5.2.1, jmeter-junit=5.2.1, jmeter-java=5.2.1, jmeter-ldap=5.2.1, jmeter-mail=5.2.1, jmeter-mongodb=5.2.1, jmeter-native=5.2.1, jmeter-tcp=5.2.1, jmeter-components=5.2.1]
+2020-12-20 01:47:58,399 INFO o.j.r.PluginManagerCMD: Params line is: /home/ivan/taurus/2020-12-20_01-47-54.824432/modified_requests.jmx
+2020-12-20 01:47:58,889 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2020-12-20 01:47:58,912 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2020-12-20 01:47:58,919 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2020-12-20 01:47:58,966 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2020-12-20 01:47:58,972 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2020-12-20 01:47:59,061 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-12-20 01:47:59,063 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-12-20 01:47:59,063 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-12-20 01:47:59,064 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-12-20 01:47:59,065 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2020-12-20 01:47:59,066 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2020-12-20 01:47:59,194 INFO o.j.r.PluginManager: Finishing without changes
+
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/home/ivan/.bzt/jmeter-taurus/5.2.1/lib/xstream-1.4.11.jar) to field java.util.TreeMap.comparator
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+
+[2020-12-20 01:47:59,248 DEBUG Engine] New artifact filename: /home/ivan/taurus/2020-12-20_01-47-54.824432/jmeter.out
+[2020-12-20 01:47:59,248 DEBUG Engine] New artifact filename: /home/ivan/taurus/2020-12-20_01-47-54.824432/jmeter.err
+[2020-12-20 01:47:59,249 DEBUG Engine] Module config: final-stats {'class': 'bzt.modules.reporting.FinalStatus'}
+[2020-12-20 01:47:59,250 DEBUG root] Importing module: bzt.modules.reporting
+[2020-12-20 01:47:59,259 DEBUG easyprocess] version=0.3
+[2020-12-20 01:47:59,261 DEBUG pyvirtualdisplay] version=1.3.2
+[2020-12-20 01:47:59,267 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/reporting.py'>
+[2020-12-20 01:47:59,268 DEBUG Engine] Module config: console {'class': 'bzt.modules.console.ConsoleStatusReporter'}
+[2020-12-20 01:47:59,268 DEBUG root] Importing module: bzt.modules.console
+[2020-12-20 01:47:59,268 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/console.py'>
+[2020-12-20 01:47:59,268 WARNING Engine] Module 'console' can be only used once, will merge all new instances into single
+[2020-12-20 01:47:59,278 DEBUG Engine.Configuration] Dumping YAML config into /home/ivan/taurus/2020-12-20_01-47-54.824432/effective.yml
+[2020-12-20 01:47:59,308 DEBUG Engine.Configuration] Dumping JSON config into /home/ivan/taurus/2020-12-20_01-47-54.824432/effective.json
+[2020-12-20 01:47:59,309 INFO Engine] Starting...
+[2020-12-20 01:47:59,310 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x7fdcddb3b9e8>
+[2020-12-20 01:47:59,310 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x7fdcddb3bb70>
+[2020-12-20 01:47:59,310 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x7fdcddb88be0>
+[2020-12-20 01:47:59,311 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x7fdcdd2f6a20>
+[2020-12-20 01:47:59,311 INFO Engine.console] Waiting for results...
+[2020-12-20 01:47:59,311 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x7fdcd10dd9b0>
+[2020-12-20 01:47:59,311 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x7fdcddb3e908>
+[2020-12-20 01:47:59,312 DEBUG Engine.local] Delay setup for jmeter/Thread Group: 0(start-at) + 0(delay) = 0
+[2020-12-20 01:47:59,314 DEBUG Engine.Configuration] Dumping YAML config into /home/ivan/taurus/2020-12-20_01-47-54.824432/effective.yml
+[2020-12-20 01:47:59,348 DEBUG Engine.Configuration] Dumping JSON config into /home/ivan/taurus/2020-12-20_01-47-54.824432/effective.json
+[2020-12-20 01:47:59,352 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2020-12-20 01:47:59,353 DEBUG root] Leveled up log file verbosity
+[2020-12-20 01:47:59,354 DEBUG root] Executing shell: ['/home/ivan/.bzt/jmeter-taurus/5.2.1/bin/jmeter.sh', '-t', '/home/ivan/taurus/2020-12-20_01-47-54.824432/modified_requests.jmx', '-j', '/home/ivan/taurus/2020-12-20_01-47-54.824432/jmeter.log', '-q', '/home/ivan/taurus/2020-12-20_01-47-54.824432/jmeter-bzt.properties', '-n', '-S', '/home/ivan/taurus/2020-12-20_01-47-54.824432/system.properties'] at /home/ivan/taurus
+[2020-12-20 01:47:59,361 DEBUG Engine.local] Starting execution: jmeter/Thread Group, rest of available slots: 9223372036854775806
+[2020-12-20 01:47:59,362 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2020-12-20 01:47:59,579 INFO Engine.console] Waiting for finish...
+[2020-12-20 01:48:07,389 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 3s
+[2020-12-20 01:48:15,402 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 2s
+[2020-12-20 01:50:43,663 WARNING Engine] Please wait for graceful shutdown...
+[2020-12-20 01:50:43,675 DEBUG root] Leveled up log file verbosity
+[2020-12-20 01:50:43,675 INFO Engine] Shutting down...
+[2020-12-20 01:50:43,687 DEBUG Engine] Current stop reason: None
+[2020-12-20 01:50:43,687 DEBUG Engine.local] Shutdown jmeter/Thread Group
+[2020-12-20 01:50:43,688 DEBUG Engine.console] Restoring logging streams, [<StreamHandler (INFO)>]/{<StreamHandler (INFO)>: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>}
+[2020-12-20 01:50:43,689 DEBUG Engine.Configuration] Dumping YAML config into /home/ivan/taurus/2020-12-20_01-47-54.824432/effective.yml
+[2020-12-20 01:50:43,716 DEBUG Engine.Configuration] Dumping JSON config into /home/ivan/taurus/2020-12-20_01-47-54.824432/effective.json
+[2020-12-20 01:50:43,718 INFO Engine] Post-processing...
+[2020-12-20 01:50:43,718 DEBUG Engine.local] Post-process jmeter/Thread Group
+[2020-12-20 01:50:43,718 DEBUG Engine] Add existing artifact (move=True): /home/ivan/taurus/2020-12-20_01-47-54.824432/modified_requests.jmx
+[2020-12-20 01:50:43,719 DEBUG Engine] No need to copy /home/ivan/taurus/2020-12-20_01-47-54.824432/modified_requests.jmx
+[2020-12-20 01:50:43,719 DEBUG Engine.jmeter.JTLReader] Buffer len: 2; Known errors count: 0
+[2020-12-20 01:50:43,719 DEBUG Engine.jmeter.JTLReader] Aggregating: 1608450641, 2 in buffer
+[2020-12-20 01:50:43,724 DEBUG Engine.jmeter.JTLReader] Aggregating: 1608450642, 1 in buffer
+[2020-12-20 01:50:43,729 DEBUG Engine.jmeter.JTLReader] Buffer len: 0; Known errors count: 0
+[2020-12-20 01:50:43,729 DEBUG Engine.consolidator] Consolidator buffer[4]: dict_keys([1608450639, 1608450640, 1608450641, 1608450642])
+[2020-12-20 01:50:43,729 DEBUG Engine.consolidator] Merging into 1608450639
+[2020-12-20 01:50:43,730 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2020-12-20 01:50:43,810 DEBUG Engine.consolidator] Processed datapoint: 1608450639/ConsolidatingAggregator@140586589076336
+[2020-12-20 01:50:43,811 DEBUG Engine.consolidator] Merging into 1608450640
+[2020-12-20 01:50:43,811 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2020-12-20 01:50:43,886 DEBUG Engine.consolidator] Processed datapoint: 1608450640/ConsolidatingAggregator@140586589076336
+[2020-12-20 01:50:43,886 DEBUG Engine.consolidator] Merging into 1608450641
+[2020-12-20 01:50:43,886 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2020-12-20 01:50:43,962 DEBUG Engine.consolidator] Processed datapoint: 1608450641/ConsolidatingAggregator@140586589076336
+[2020-12-20 01:50:43,963 DEBUG Engine.consolidator] Merging into 1608450642
+[2020-12-20 01:50:43,963 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2020-12-20 01:50:44,035 DEBUG Engine.consolidator] Processed datapoint: 1608450642/ConsolidatingAggregator@140586589076336
+[2020-12-20 01:50:44,035 INFO Engine.final-stats] Test duration: 0:02:44
+[2020-12-20 01:50:44,035 INFO Engine.final-stats] Samples count: 2410, 0.00% failures
+[2020-12-20 01:50:44,035 INFO Engine.final-stats] Average times: total 0.577, latency 0.106, connect 0.012
+[2020-12-20 01:50:44,036 INFO Engine.final-stats] Percentiles:
+(0lqqqqqqqqqqqqqqqwqqqqqqqqqqqqqqqk(B
+(0x(B Percentile, % (0x(B Resp. Time, s (0x(B
+(0tqqqqqqqqqqqqqqqnqqqqqqqqqqqqqqqu(B
+(0x(B           0.0 (0x(B         0.217 (0x(B
+(0x(B          50.0 (0x(B         0.513 (0x(B
+(0x(B          90.0 (0x(B         0.972 (0x(B
+(0x(B          95.0 (0x(B         1.064 (0x(B
+(0x(B          99.0 (0x(B         1.277 (0x(B
+(0x(B          99.9 (0x(B         3.822 (0x(B
+(0x(B         100.0 (0x(B         4.046 (0x(B
+(0mqqqqqqqqqqqqqqqvqqqqqqqqqqqqqqqj(B
+[2020-12-20 01:50:44,038 INFO Engine.final-stats] Request label stats:
+(0lqqqqqqqqqqqqqqwqqqqqqqqwqqqqqqqqqwqqqqqqqqwqqqqqqqk(B
+(0x(B label        (0x(B status (0x(B    succ (0x(B avg_rt (0x(B error (0x(B
+(0tqqqqqqqqqqqqqqnqqqqqqqqnqqqqqqqqqnqqqqqqqqnqqqqqqqu(B
+(0x(B blazedemo    (0x(B   OK   (0x(B 100.00% (0x(B  0.974 (0x(B       (0x(B
+(0x(B confirmation (0x(B   OK   (0x(B 100.00% (0x(B  0.330 (0x(B       (0x(B
+(0x(B login        (0x(B   OK   (0x(B 100.00% (0x(B  0.773 (0x(B       (0x(B
+(0x(B purchase     (0x(B   OK   (0x(B 100.00% (0x(B  0.326 (0x(B       (0x(B
+(0x(B reserve      (0x(B   OK   (0x(B 100.00% (0x(B  0.318 (0x(B       (0x(B
+(0x(B vacation     (0x(B   OK   (0x(B 100.00% (0x(B  0.745 (0x(B       (0x(B
+(0mqqqqqqqqqqqqqqvqqqqqqqqvqqqqqqqqqvqqqqqqqqvqqqqqqqj(B
+[2020-12-20 01:50:44,038 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2020-12-20 01:50:44,038 INFO Engine.final-stats] Test duration: 0:02:44
+[2020-12-20 01:50:44,038 INFO Engine.final-stats] Samples count: 2410, 0.00% failures
+[2020-12-20 01:50:44,038 INFO Engine.final-stats] Average times: total 0.577, latency 0.106, connect 0.012
+[2020-12-20 01:50:44,039 INFO Engine.final-stats] Percentiles:
+(0lqqqqqqqqqqqqqqqwqqqqqqqqqqqqqqqk(B
+(0x(B Percentile, % (0x(B Resp. Time, s (0x(B
+(0tqqqqqqqqqqqqqqqnqqqqqqqqqqqqqqqu(B
+(0x(B           0.0 (0x(B         0.217 (0x(B
+(0x(B          50.0 (0x(B         0.513 (0x(B
+(0x(B          90.0 (0x(B         0.972 (0x(B
+(0x(B          95.0 (0x(B         1.064 (0x(B
+(0x(B          99.0 (0x(B         1.277 (0x(B
+(0x(B          99.9 (0x(B         3.822 (0x(B
+(0x(B         100.0 (0x(B         4.046 (0x(B
+(0mqqqqqqqqqqqqqqqvqqqqqqqqqqqqqqqj(B
+[2020-12-20 01:50:44,040 INFO Engine.final-stats] Request label stats:
+(0lqqqqqqqqqqqqqqwqqqqqqqqwqqqqqqqqqwqqqqqqqqwqqqqqqqk(B
+(0x(B label        (0x(B status (0x(B    succ (0x(B avg_rt (0x(B error (0x(B
+(0tqqqqqqqqqqqqqqnqqqqqqqqnqqqqqqqqqnqqqqqqqqnqqqqqqqu(B
+(0x(B blazedemo    (0x(B   OK   (0x(B 100.00% (0x(B  0.974 (0x(B       (0x(B
+(0x(B confirmation (0x(B   OK   (0x(B 100.00% (0x(B  0.330 (0x(B       (0x(B
+(0x(B login        (0x(B   OK   (0x(B 100.00% (0x(B  0.773 (0x(B       (0x(B
+(0x(B purchase     (0x(B   OK   (0x(B 100.00% (0x(B  0.326 (0x(B       (0x(B
+(0x(B reserve      (0x(B   OK   (0x(B 100.00% (0x(B  0.318 (0x(B       (0x(B
+(0x(B vacation     (0x(B   OK   (0x(B 100.00% (0x(B  0.745 (0x(B       (0x(B
+(0mqqqqqqqqqqqqqqvqqqqqqqqvqqqqqqqqqvqqqqqqqqvqqqqqqqj(B
+[2020-12-20 01:50:44,040 INFO Engine.final-stats] Dumping final status as CSV: performance_test_csv_output.csv
+[2020-12-20 01:50:44,322 DEBUG Engine.Configuration] Dumping YAML config into /home/ivan/taurus/2020-12-20_01-47-54.824432/effective.yml
+[2020-12-20 01:50:44,345 DEBUG Engine.Configuration] Dumping JSON config into /home/ivan/taurus/2020-12-20_01-47-54.824432/effective.json
+[2020-12-20 01:50:44,346 INFO root] Artifacts dir: /home/ivan/taurus/2020-12-20_01-47-54.824432
+[2020-12-20 01:50:44,346 INFO root] Done performing with code: 0
+[2020-12-20 01:50:44,346 DEBUG root] Closing log handler: /home/ivan/taurus/2020-12-20_01-47-54.824432/bzt.log

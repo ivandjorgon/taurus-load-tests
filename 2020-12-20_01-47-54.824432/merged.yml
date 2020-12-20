@@ -1,0 +1,56 @@
+---
+execution:
+- concurrency: 10
+  hold-for: 2m
+  ramp-up: 40s
+  scenario: Thread Group
+reporting:
+- module: console
+- dump-csv: performance_test_csv_output.csv
+  module: final-stats
+  percentiles: true
+  summary: true
+  summary-labels: true
+  test-duration: true
+scenarios:
+  Thread Group:
+    requests:
+    - label: blazedemo
+      method: GET
+      url: http://blazedemo.com/
+    - body:
+        fromPort: Paris
+        toPort: Buenos Aires
+      label: reserve
+      method: POST
+      url: http://blazedemo.com/reserve.php
+    - body:
+        airline: Virgin America
+        flight: 43
+        fromPort: Paris
+        price: 472.56
+        toPort: Buenos Aires
+      label: purchase
+      method: POST
+      url: http://blazedemo.com/purchase.php
+    - body:
+        address: 123 Main St.
+        cardType: visa
+        city: Toronto
+        creditCardMonth: 11
+        creditCardNumber: 123456781222
+        creditCardYear: 2020
+        inputName: Ivan Djorgon
+        nameOnCard: Ivan Djorgon
+        state: Ontario
+        zipCode: 12345
+      label: confirmation
+      method: POST
+      url: http://blazedemo.com/confirmation.php
+    - label: login
+      method: GET
+      url: http://blazedemo.com/login
+    - label: vacation
+      method: GET
+      url: http://blazedemo.com/vacation.html
+
