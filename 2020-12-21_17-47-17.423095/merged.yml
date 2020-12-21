@@ -1,17 +1,36 @@
 ---
 execution:
-- concurrency: ${__P(my_conc,3)}    # use `my_conc` prop or default=3 if property isn't found
-  ramp-up: 50s
+- concurrency: ${__P(my_conc,3)}
   hold-for: ${__P(my_hold,10)}
+  ramp-up: 50s
   scenario: Thread Group
-
 modules:
   jmeter:
     properties:
       my_conc: 20
       my_hold: 20
-
-scenarios: 
+reporting:
+- criteria:
+  - avg-rt>1000ms for 10s, continue as failed
+  - avg-lt>2
+  - stdev-rt>0.5
+  - failures of GET blazedemo >20% for 10s, stop as failed
+  - failures of POST purchase flight >20% for 10s, stop as failed
+  - failures of GET login page >20% for 10s, stop as failed
+  - class: bzt.modules.monitoring.MonitoringCriteria
+    condition: '>'
+    subject: local/cpu
+    threshold: 90
+    timeframe: 5s
+  module: passfail
+- module: console
+- dump-csv: performance_test_csv_output.csv
+  module: final-stats
+  percentiles: true
+  summary: true
+  summary-labels: true
+  test-duration: true
+scenarios:
   Thread Group:
     requests:
     - label: GET blazedemo
@@ -24,25 +43,25 @@ scenarios:
       method: POST
       url: http://blazedemo.com/reserve.php
     - body:
-        flight: 43
-        price: 472.56
         airline: Virgin America
+        flight: 43
         fromPort: Paris
+        price: 472.56
         toPort: Buenos Aires
       label: POST purchase flight
       method: POST
       url: http://blazedemo.com/purchase.php
     - body:
-        inputName: Ivan Djorgon
         address: 123 Main St.
+        cardType: visa
         city: Toronto
+        creditCardMonth: 11
+        creditCardNumber: 123456781222
+        creditCardYear: 2020
+        inputName: Ivan Djorgon
+        nameOnCard: Ivan Djorgon
         state: Ontario
         zipCode: 12345
-        cardType: visa
-        creditCardNumber: 123456781222
-        creditCardMonth: 11
-        creditCardYear: 2020
-        nameOnCard: Ivan Djorgon
       label: POST purchase confirmation
       method: POST
       url: http://blazedemo.com/confirmation.php
@@ -55,36 +74,13 @@ scenarios:
     - label: GET index page
       method: GET
       url: http://blazedemo.com/index.php
-
-reporting:
-  - module: passfail
-    criteria:
-    - avg-rt>1000ms for 10s, continue as failed
-    - avg-lt>2
-    - stdev-rt>0.5
-    - failures of GET blazedemo >20% for 10s, stop as failed
-    - failures of POST purchase flight >20% for 10s, stop as failed
-    - failures of GET login page >20% for 10s, stop as failed
-    - class: bzt.modules.monitoring.MonitoringCriteria
-      subject: local/cpu
-      condition: '>'
-      threshold: 90
-      timeframe: 5s
-
-  - module: console 
-  - module: final-stats 
-    summary: true 
-    percentiles: true
-    summary-labels: true
-    test-duration: true 
-    dump-csv: test_csv_output.csv
-
 services:
 - module: monitoring
   ~local:
-  - interval: 20s   # polling interval
-    logging: True # local monitoring logs will be saved to "local_monitoring_logs.csv" in the artifacts dir
+  - interval: 20s
+    logging: true
     metrics:
     - cpu
     - disk-space
     - engine-loop
+

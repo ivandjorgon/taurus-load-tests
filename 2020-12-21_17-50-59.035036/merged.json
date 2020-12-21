@@ -1,0 +1,129 @@
+{
+ "execution": [
+  {
+   "concurrency": "${__P(my_conc,3)}",
+   "ramp-up": "50s",
+   "hold-for": "${__P(my_hold,10)}",
+   "scenario": "Thread Group"
+  }
+ ],
+ "modules": {
+  "jmeter": {
+   "properties": {
+    "my_conc": 20,
+    "my_hold": 20
+   }
+  }
+ },
+ "scenarios": {
+  "Thread Group": {
+   "requests": [
+    {
+     "label": "GET blazedemo",
+     "method": "GET",
+     "url": "http://blazedemo.com/"
+    },
+    {
+     "body": {
+      "fromPort": "Paris",
+      "toPort": "Buenos Aires"
+     },
+     "label": "POST reserve flight",
+     "method": "POST",
+     "url": "http://blazedemo.com/reserve.php"
+    },
+    {
+     "body": {
+      "flight": 43,
+      "price": 472.56,
+      "airline": "Virgin America",
+      "fromPort": "Paris",
+      "toPort": "Buenos Aires"
+     },
+     "label": "POST purchase flight",
+     "method": "POST",
+     "url": "http://blazedemo.com/purchase.php"
+    },
+    {
+     "body": {
+      "inputName": "Ivan Djorgon",
+      "address": "123 Main St.",
+      "city": "Toronto",
+      "state": "Ontario",
+      "zipCode": 12345,
+      "cardType": "visa",
+      "creditCardNumber": 123456781222,
+      "creditCardMonth": 11,
+      "creditCardYear": 2020,
+      "nameOnCard": "Ivan Djorgon"
+     },
+     "label": "POST purchase confirmation",
+     "method": "POST",
+     "url": "http://blazedemo.com/confirmation.php"
+    },
+    {
+     "label": "GET login page",
+     "method": "GET",
+     "url": "http://blazedemo.com/login"
+    },
+    {
+     "label": "GET vacation page",
+     "method": "GET",
+     "url": "http://blazedemo.com/vacation.html"
+    },
+    {
+     "label": "GET index page",
+     "method": "GET",
+     "url": "http://blazedemo.com/index.php"
+    }
+   ]
+  }
+ },
+ "reporting": [
+  {
+   "module": "passfail",
+   "criteria": [
+    "avg-rt>1000ms for 10s, continue as failed",
+    "avg-lt>2",
+    "stdev-rt>0.5",
+    "failures of GET blazedemo >20% for 10s, stop as failed",
+    "failures of POST purchase flight >20% for 10s, stop as failed",
+    "failures of GET login page >20% for 10s, stop as failed",
+    {
+     "class": "bzt.modules.monitoring.MonitoringCriteria",
+     "subject": "local/cpu",
+     "condition": ">",
+     "threshold": 90,
+     "timeframe": "5s"
+    }
+   ]
+  },
+  {
+   "module": "console"
+  },
+  {
+   "module": "final-stats",
+   "summary": true,
+   "percentiles": true,
+   "summary-labels": true,
+   "test-duration": true,
+   "dump-csv": "test_csv_output.csv"
+  }
+ ],
+ "services": [
+  {
+   "module": "monitoring",
+   "~local": [
+    {
+     "interval": "20s",
+     "logging": true,
+     "metrics": [
+      "cpu",
+      "disk-space",
+      "engine-loop"
+     ]
+    }
+   ]
+  }
+ ]
+}

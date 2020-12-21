@@ -77,7 +77,7 @@ reporting:
     percentiles: true
     summary-labels: true
     test-duration: true 
-    dump-csv: test_csv_output.csv
+    dump-csv: performance_test_csv_output.csv
 
 services:
 - module: monitoring

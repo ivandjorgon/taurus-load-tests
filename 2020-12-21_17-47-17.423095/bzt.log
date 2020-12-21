@@ -1,0 +1,308 @@
+[2020-12-21 17:47:17,331 INFO root] Taurus CLI Tool v1.15.1
+[2020-12-21 17:47:17,331 DEBUG root] Build: 13973 Fri Oct 30 09:16:46 UTC 2020
+[2020-12-21 17:47:17,332 DEBUG root] Extended git info:  3fecb4b9 Release 1.15.1 (#1420)
+[2020-12-21 17:47:17,332 DEBUG root] Command-line options: {'log': '/tmp/bzt_o7qipz1r.log', 'option': None, 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': []}
+[2020-12-21 17:47:17,332 DEBUG root] Python: CPython 3.6.9
+[2020-12-21 17:47:17,332 DEBUG root] OS: uname_result(system='Linux', node='ivan-VirtualBox', release='5.4.0-58-generic', version='#64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020', machine='x86_64', processor='x86_64')
+[2020-12-21 17:47:17,332 INFO root] Starting with configs: ['taurus_jmeter_script_blazedemo.yml']
+[2020-12-21 17:47:17,332 DEBUG root] Using personal config: /home/ivan/.bzt-rc
+[2020-12-21 17:47:17,333 INFO Engine] Configuring...
+[2020-12-21 17:47:17,354 DEBUG Engine] Base configs list: ['/usr/local/lib/python3.6/dist-packages/bzt/resources/10-base-config.yml']
+[2020-12-21 17:47:17,355 DEBUG Engine.Configuration] Configs: ['/usr/local/lib/python3.6/dist-packages/bzt/resources/10-base-config.yml']
+[2020-12-21 17:47:17,355 DEBUG Engine.Configuration] Reading /usr/local/lib/python3.6/dist-packages/bzt/resources/10-base-config.yml as YAML
+[2020-12-21 17:47:17,386 DEBUG Engine] User configs list: ['/home/ivan/.bzt-rc', 'taurus_jmeter_script_blazedemo.yml']
+[2020-12-21 17:47:17,386 DEBUG Engine.Configuration] Configs: ['/home/ivan/.bzt-rc', 'taurus_jmeter_script_blazedemo.yml']
+[2020-12-21 17:47:17,386 DEBUG Engine.Configuration] Reading /home/ivan/.bzt-rc as YAML
+[2020-12-21 17:47:17,390 DEBUG Engine.Configuration] Reading taurus_jmeter_script_blazedemo.yml as YAML
+[2020-12-21 17:47:17,404 DEBUG Engine.Configuration] Configs: ['/home/ivan/.bzt-rc', 'taurus_jmeter_script_blazedemo.yml']
+[2020-12-21 17:47:17,404 DEBUG Engine.Configuration] Reading /home/ivan/.bzt-rc as YAML
+[2020-12-21 17:47:17,408 DEBUG Engine.Configuration] Reading taurus_jmeter_script_blazedemo.yml as YAML
+[2020-12-21 17:47:17,422 DEBUG Engine] Requesting updates info: https://gettaurus.org/updates/?version=1.15.1&installID=linux-80027a07efa
+[2020-12-21 17:47:17,422 DEBUG HTTPClient] Making HTTP request GET https://gettaurus.org/updates/?version=1.15.1&installID=linux-80027a07efa
+[2020-12-21 17:47:17,423 INFO Engine] Artifacts dir: /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095
+[2020-12-21 17:47:17,424 DEBUG Engine] New artifact filename: /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/effective
+[2020-12-21 17:47:17,429 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): gettaurus.org:443
+[2020-12-21 17:47:17,429 DEBUG Engine.Configuration] Dumping YAML config into /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/effective.yml
+[2020-12-21 17:47:17,455 DEBUG Engine.Configuration] Dumping JSON config into /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/effective.json
+[2020-12-21 17:47:17,456 DEBUG Engine] New artifact filename: /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/merged.yml
+[2020-12-21 17:47:17,457 DEBUG Engine.Configuration] Dumping YAML config into /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/merged.yml
+[2020-12-21 17:47:17,464 DEBUG Engine] New artifact filename: /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/merged.json
+[2020-12-21 17:47:17,465 DEBUG Engine.Configuration] Dumping JSON config into /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/merged.json
+[2020-12-21 17:47:17,465 DEBUG Engine] Add existing artifact (move=False): taurus_jmeter_script_blazedemo.yml
+[2020-12-21 17:47:17,465 DEBUG Engine] Copying taurus_jmeter_script_blazedemo.yml to /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/taurus_jmeter_script_blazedemo.yml
+[2020-12-21 17:47:17,466 DEBUG Engine] Set PYTHONPATH to '/home/ivan/.bzt/python-packages/3.6.9' + '/home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/python-packages/3.6.9' + 
+[2020-12-21 17:47:17,466 DEBUG Engine] Content of user packages dir: %s
+[2020-12-21 17:47:17,467 DEBUG Engine] OS env: OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+[2020-12-21 17:47:17,467 DEBUG Engine] OS env: TAURUS_ARTIFACTS_DIR=/home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095
+[2020-12-21 17:47:17,467 DEBUG root] Closing log handler: /tmp/bzt_o7qipz1r.log
+[2020-12-21 17:47:17,467 DEBUG root] Switched writing logs to /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/bzt.log
+[2020-12-21 17:47:17,468 DEBUG root] Linting config
+[2020-12-21 17:47:17,470 INFO Engine] Preparing...
+[2020-12-21 17:47:17,471 DEBUG Engine] Module config: consolidator {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'}
+[2020-12-21 17:47:17,471 DEBUG root] Importing module: bzt.modules.aggregator
+[2020-12-21 17:47:17,597 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/aggregator.py'>
+[2020-12-21 17:47:17,598 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2020-12-21 17:47:17,598 DEBUG Engine] Module config: monitoring {'class': 'bzt.modules.monitoring.Monitoring'}
+[2020-12-21 17:47:17,598 DEBUG root] Importing module: bzt.modules.monitoring
+[2020-12-21 17:47:17,599 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/monitoring.py'>
+[2020-12-21 17:47:17,600 WARNING Engine] Module 'monitoring' can be only used once, will merge all new instances into single
+[2020-12-21 17:47:17,600 DEBUG Engine] New artifact filename: /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/local_monitoring_logs.csv
+[2020-12-21 17:47:17,600 DEBUG Engine] Module config: local {'class': 'bzt.modules.provisioning.Local'}
+[2020-12-21 17:47:17,600 DEBUG root] Importing module: bzt.modules.provisioning
+[2020-12-21 17:47:17,600 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/provisioning.py'>
+[2020-12-21 17:47:17,601 DEBUG Engine] Module config: jmeter {'class': 'bzt.modules.jmeter.JMeterExecutor', 'protocol-handlers': {'http': 'bzt.jmx.http.HTTPProtocolHandler'}, 'plugins': ['jpgc-casutg', 'jpgc-dummy', 'jpgc-ffw', 'jpgc-fifo', 'jpgc-functions', 'jpgc-json', 'jpgc-perfmon', 'jpgc-prmctl', 'jpgc-tst'], 'properties': {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': '', 'my_conc': 20, 'my_hold': 20}}
+[2020-12-21 17:47:17,601 DEBUG root] Importing module: bzt.modules.jmeter
+[2020-12-21 17:47:17,627 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/jmeter.py'>
+[2020-12-21 17:47:17,627 DEBUG Engine.local] Preparing executor: jmeter/140106420388136
+[2020-12-21 17:47:17,627 DEBUG Engine] New artifact filename: /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/jmeter.log
+[2020-12-21 17:47:17,627 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2020-12-21 17:47:17,628 DEBUG Engine.jmeter] Port 4445 is free
+[2020-12-21 17:47:17,628 DEBUG Engine.jmeter] Using port 4445 for management
+[2020-12-21 17:47:17,628 DEBUG Engine] New artifact filename: /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/requests.jmx
+[2020-12-21 17:47:17,628 DEBUG root] Importing module: bzt.jmx.http
+[2020-12-21 17:47:17,629 DEBUG root] Loading class: 'HTTPProtocolHandler' from <module 'bzt.jmx.http' from '/usr/local/lib/python3.6/dist-packages/bzt/jmx/http.py'>
+[2020-12-21 17:47:17,633 DEBUG JMeterScenarioBuilder] Saving JMX to: /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/requests.jmx
+[2020-12-21 17:47:17,634 DEBUG Engine.jmeter] Additional system properties {'sun.net.inetaddr.ttl': 0}
+[2020-12-21 17:47:17,634 DEBUG Engine] New artifact filename: /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/system.properties
+[2020-12-21 17:47:17,634 DEBUG Engine.jmeter] Additional properties: {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': '', 'my_conc': 20, 'my_hold': 20, 'jmeterengine.nongui.port': 4445, 'jmeterengine.nongui.maxport': 4445, 'jmeter.save.saveservice.timestamp_format': 'ms', 'sampleresult.default.encoding': 'UTF-8', 'user.classpath': '/home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095:/home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095'}
+[2020-12-21 17:47:17,634 DEBUG Engine] New artifact filename: /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/jmeter-bzt.properties
+[2020-12-21 17:47:17,635 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2020-12-21 17:47:17,635 DEBUG root] Executing shell: ['java', '-version'] at .
+[2020-12-21 17:47:17,696 DEBUG Engine.jmeter.JavaVM] JavaVM output: openjdk version "11.0.9.1" 2020-11-04
+OpenJDK Runtime Environment (build 11.0.9.1+1-Ubuntu-0ubuntu1.18.04)
+OpenJDK 64-Bit Server VM (build 11.0.9.1+1-Ubuntu-0ubuntu1.18.04, mixed mode, sharing)
+
+[2020-12-21 17:47:17,697 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2020-12-21 17:47:17,698 DEBUG Engine.jmeter.JMeter] Trying JMeter..
+[2020-12-21 17:47:17,700 DEBUG root] Executing shell: ['/home/ivan/.bzt/jmeter-taurus/5.2.1/bin/jmeter.sh', '-j', '/tmp/jmeterto8payg9log', '--version'] at .
+[2020-12-21 17:47:18,048 DEBUG urllib3.connectionpool] https://gettaurus.org:443 "GET /updates/?version=1.15.1&installID=linux-80027a07efa HTTP/1.1" 200 40
+[2020-12-21 17:47:18,051 DEBUG Engine] Taurus updates info: {'latest': '1.15.1', 'needsUpgrade': False}
+[2020-12-21 17:47:18,052 DEBUG Engine] Installation is up-to-date
+[2020-12-21 17:47:19,114 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) |
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 5.2.1
+
+Copyright (c) 1999-2019 The Apache Software Foundation
+
+ / 
+[2020-12-21 17:47:19,116 DEBUG Engine] New artifact filename: /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/kpi.jtl
+[2020-12-21 17:47:19,116 DEBUG Engine] New artifact filename: /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/error.jtl
+[2020-12-21 17:47:19,117 DEBUG Engine.jmeter.LoadSettingsProcessor] Load: LoadSpec(concurrency='${__P(my_conc,3)}', throughput=None, ramp_up=50.0, hold='${__P(my_hold,10)}', iterations=0, duration=1, steps=None)
+[2020-12-21 17:47:19,119 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (Thread Group) to ConcurrencyThreadGroup and apply load parameters
+[2020-12-21 17:47:19,119 DEBUG Engine] New artifact filename: /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/modified_requests.jmx
+[2020-12-21 17:47:19,119 DEBUG JMX] Saving JMX to: /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/modified_requests.jmx
+[2020-12-21 17:47:19,121 DEBUG root] Executing shell: ['/home/ivan/.bzt/jmeter-taurus/5.2.1/bin/PluginsManagerCMD.sh', 'install-for-jmx', '/home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/modified_requests.jmx'] at .
+[2020-12-21 17:47:21,807 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/modified_requests.jmx
+2020-12-21 17:47:20,471 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
+2020-12-21 17:47:20,580 INFO o.j.r.JARSourceHTTP: Found cached repo
+2020-12-21 17:47:20,907 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.1, jpgc-casutg=2.9, jpgc-dummy=0.4, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=1.3, jpgc-tst=2.5, jmeter-core=5.2.1, jmeter-ftp=5.2.1, jmeter-http=5.2.1, jmeter-jdbc=5.2.1, jmeter-jms=5.2.1, jmeter-junit=5.2.1, jmeter-java=5.2.1, jmeter-ldap=5.2.1, jmeter-mail=5.2.1, jmeter-mongodb=5.2.1, jmeter-native=5.2.1, jmeter-tcp=5.2.1, jmeter-components=5.2.1]
+2020-12-21 17:47:20,911 INFO o.j.r.PluginManagerCMD: Params line is: /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/modified_requests.jmx
+2020-12-21 17:47:21,399 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2020-12-21 17:47:21,423 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2020-12-21 17:47:21,435 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2020-12-21 17:47:21,497 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2020-12-21 17:47:21,504 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2020-12-21 17:47:21,631 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-12-21 17:47:21,632 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-12-21 17:47:21,633 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-12-21 17:47:21,634 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-12-21 17:47:21,635 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2020-12-21 17:47:21,637 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2020-12-21 17:47:21,763 INFO o.j.r.PluginManager: Finishing without changes
+
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/home/ivan/.bzt/jmeter-taurus/5.2.1/lib/xstream-1.4.11.jar) to field java.util.TreeMap.comparator
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+
+[2020-12-21 17:47:21,808 DEBUG Engine] New artifact filename: /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/jmeter.out
+[2020-12-21 17:47:21,808 DEBUG Engine] New artifact filename: /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/jmeter.err
+[2020-12-21 17:47:21,809 DEBUG Engine] Module config: final-stats {'class': 'bzt.modules.reporting.FinalStatus'}
+[2020-12-21 17:47:21,810 DEBUG root] Importing module: bzt.modules.reporting
+[2020-12-21 17:47:21,819 DEBUG easyprocess] version=0.3
+[2020-12-21 17:47:21,820 DEBUG pyvirtualdisplay] version=1.3.2
+[2020-12-21 17:47:21,826 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/reporting.py'>
+[2020-12-21 17:47:21,826 DEBUG Engine] Module config: console {'class': 'bzt.modules.console.ConsoleStatusReporter'}
+[2020-12-21 17:47:21,826 DEBUG root] Importing module: bzt.modules.console
+[2020-12-21 17:47:21,826 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/console.py'>
+[2020-12-21 17:47:21,827 DEBUG Engine] Module config: passfail {'class': 'bzt.modules.passfail.PassFailStatus'}
+[2020-12-21 17:47:21,827 DEBUG root] Importing module: bzt.modules.passfail
+[2020-12-21 17:47:21,827 DEBUG root] Loading class: 'PassFailStatus' from <module 'bzt.modules.passfail' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/passfail.py'>
+[2020-12-21 17:47:21,827 WARNING Engine] Module 'console' can be only used once, will merge all new instances into single
+[2020-12-21 17:47:21,828 WARNING Engine.jmeter] 
+Non-integer concurrency value [str]: ${__P(my_conc,3)} 
+[2020-12-21 17:47:21,835 DEBUG root] Importing module: bzt.modules.passfail
+[2020-12-21 17:47:21,835 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/passfail.py'>
+[2020-12-21 17:47:21,835 DEBUG root] Importing module: bzt.modules.passfail
+[2020-12-21 17:47:21,835 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/passfail.py'>
+[2020-12-21 17:47:21,835 DEBUG root] Importing module: bzt.modules.passfail
+[2020-12-21 17:47:21,835 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/passfail.py'>
+[2020-12-21 17:47:21,835 DEBUG root] Importing module: bzt.modules.passfail
+[2020-12-21 17:47:21,835 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/passfail.py'>
+[2020-12-21 17:47:21,836 DEBUG root] Importing module: bzt.modules.passfail
+[2020-12-21 17:47:21,836 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/passfail.py'>
+[2020-12-21 17:47:21,836 DEBUG root] Importing module: bzt.modules.passfail
+[2020-12-21 17:47:21,836 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/passfail.py'>
+[2020-12-21 17:47:21,836 DEBUG root] Importing module: bzt.modules.monitoring
+[2020-12-21 17:47:21,836 DEBUG root] Loading class: 'MonitoringCriteria' from <module 'bzt.modules.monitoring' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/monitoring.py'>
+[2020-12-21 17:47:21,839 DEBUG Engine.Configuration] Dumping YAML config into /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/effective.yml
+[2020-12-21 17:47:21,869 DEBUG Engine.Configuration] Dumping JSON config into /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/effective.json
+[2020-12-21 17:47:21,870 INFO Engine] Starting...
+[2020-12-21 17:47:21,870 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x7f6d1e04f860>
+[2020-12-21 17:47:21,870 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x7f6d1e04fef0>
+[2020-12-21 17:47:21,871 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x7f6d11615a20>
+[2020-12-21 17:47:21,871 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x7f6d11632400>
+[2020-12-21 17:47:21,871 INFO Engine.console] Waiting for results...
+[2020-12-21 17:47:21,871 DEBUG Engine] Startup <bzt.modules.passfail.PassFailStatus object at 0x7f6d115cda58>
+[2020-12-21 17:47:21,871 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x7f6d113667f0>
+[2020-12-21 17:47:21,871 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x7f6d1167c588>
+[2020-12-21 17:47:21,871 DEBUG Engine.local] Delay setup for jmeter/Thread Group: 0(start-at) + 0(delay) = 0
+[2020-12-21 17:47:21,874 DEBUG Engine.Configuration] Dumping YAML config into /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/effective.yml
+[2020-12-21 17:47:21,907 DEBUG Engine.Configuration] Dumping JSON config into /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/effective.json
+[2020-12-21 17:47:21,909 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2020-12-21 17:47:21,909 DEBUG root] Leveled up log file verbosity
+[2020-12-21 17:47:21,910 DEBUG root] Executing shell: ['/home/ivan/.bzt/jmeter-taurus/5.2.1/bin/jmeter.sh', '-t', '/home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/modified_requests.jmx', '-j', '/home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/jmeter.log', '-q', '/home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/jmeter-bzt.properties', '-n', '-S', '/home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/system.properties'] at /home/ivan/taurus-load-tests
+[2020-12-21 17:47:21,914 DEBUG Engine.local] Starting execution: jmeter/Thread Group, rest of available slots: 9223372036854775806
+[2020-12-21 17:47:21,917 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2020-12-21 17:47:22,123 INFO Engine.console] Waiting for finish...
+[2020-12-21 17:47:28,959 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 3s
+[2020-12-21 17:47:36,076 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 2s
+[2020-12-21 17:47:43,986 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 3s
+[2020-12-21 17:47:50,001 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 2s
+[2020-12-21 17:47:51,014 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 3s
+[2020-12-21 17:48:38,104 WARNING Engine] Please wait for graceful shutdown...
+[2020-12-21 17:48:38,117 DEBUG root] Leveled up log file verbosity
+[2020-12-21 17:48:38,117 INFO Engine] Shutting down...
+[2020-12-21 17:48:38,130 DEBUG Engine] Current stop reason: None
+[2020-12-21 17:48:38,131 DEBUG Engine.local] Shutdown jmeter/Thread Group
+[2020-12-21 17:48:38,131 DEBUG Engine.console] Restoring logging streams, [<StreamHandler (INFO)>]/{<StreamHandler (INFO)>: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>}
+[2020-12-21 17:48:38,135 DEBUG Engine.Configuration] Dumping YAML config into /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/effective.yml
+[2020-12-21 17:48:38,169 DEBUG Engine.Configuration] Dumping JSON config into /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/effective.json
+[2020-12-21 17:48:38,171 INFO Engine] Post-processing...
+[2020-12-21 17:48:38,171 DEBUG Engine.local] Post-process jmeter/Thread Group
+[2020-12-21 17:48:38,171 DEBUG Engine] Add existing artifact (move=True): /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/modified_requests.jmx
+[2020-12-21 17:48:38,171 DEBUG Engine] No need to copy /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/modified_requests.jmx
+[2020-12-21 17:48:38,171 DEBUG Engine.jmeter.JTLReader] Buffer len: 3; Known errors count: 0
+[2020-12-21 17:48:38,172 DEBUG Engine.jmeter.JTLReader] Aggregating: 1608594512, 3 in buffer
+[2020-12-21 17:48:38,181 DEBUG Engine.jmeter.JTLReader] Aggregating: 1608594513, 2 in buffer
+[2020-12-21 17:48:38,187 DEBUG Engine.jmeter.JTLReader] Aggregating: 1608594514, 1 in buffer
+[2020-12-21 17:48:38,191 DEBUG Engine.jmeter.JTLReader] Buffer len: 0; Known errors count: 0
+[2020-12-21 17:48:38,192 DEBUG Engine.consolidator] Consolidator buffer[5]: dict_keys([1608594510, 1608594511, 1608594512, 1608594513, 1608594514])
+[2020-12-21 17:48:38,192 DEBUG Engine.consolidator] Merging into 1608594510
+[2020-12-21 17:48:38,192 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2020-12-21 17:48:38,286 DEBUG Engine.passfail] 1608594510 Alert: avg-rt>1000ms for -9223372036854775806 sec: False
+[2020-12-21 17:48:38,286 DEBUG Engine.passfail] No label GET blazedemo  in dict_keys(['GET vacation page', 'GET index page', 'POST reserve flight', 'POST purchase flight', 'POST purchase confirmation', 'GET login page', 'GET blazedemo', ''])
+[2020-12-21 17:48:38,286 DEBUG Engine.passfail] No label POST purchase flight  in dict_keys(['GET vacation page', 'GET index page', 'POST reserve flight', 'POST purchase flight', 'POST purchase confirmation', 'GET login page', 'GET blazedemo', ''])
+[2020-12-21 17:48:38,286 DEBUG Engine.passfail] No label GET login page  in dict_keys(['GET vacation page', 'GET index page', 'POST reserve flight', 'POST purchase flight', 'POST purchase confirmation', 'GET login page', 'GET blazedemo', ''])
+[2020-12-21 17:48:38,286 DEBUG Engine.consolidator] Processed datapoint: 1608594510/ConsolidatingAggregator@140106631806704
+[2020-12-21 17:48:38,286 DEBUG Engine.consolidator] Merging into 1608594511
+[2020-12-21 17:48:38,286 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2020-12-21 17:48:38,367 DEBUG Engine.passfail] 1608594511 Alert: avg-rt>1000ms for -9223372036854775806 sec: False
+[2020-12-21 17:48:38,367 DEBUG Engine.passfail] No label GET blazedemo  in dict_keys(['POST purchase confirmation', 'POST reserve flight', 'POST purchase flight', 'GET vacation page', 'GET login page', 'GET index page', 'GET blazedemo', ''])
+[2020-12-21 17:48:38,367 DEBUG Engine.passfail] No label POST purchase flight  in dict_keys(['POST purchase confirmation', 'POST reserve flight', 'POST purchase flight', 'GET vacation page', 'GET login page', 'GET index page', 'GET blazedemo', ''])
+[2020-12-21 17:48:38,367 DEBUG Engine.passfail] No label GET login page  in dict_keys(['POST purchase confirmation', 'POST reserve flight', 'POST purchase flight', 'GET vacation page', 'GET login page', 'GET index page', 'GET blazedemo', ''])
+[2020-12-21 17:48:38,367 DEBUG Engine.consolidator] Processed datapoint: 1608594511/ConsolidatingAggregator@140106631806704
+[2020-12-21 17:48:38,367 DEBUG Engine.consolidator] Merging into 1608594512
+[2020-12-21 17:48:38,367 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2020-12-21 17:48:38,461 DEBUG Engine.passfail] 1608594512 Alert: avg-rt>1000ms for 1 sec: True
+[2020-12-21 17:48:38,462 DEBUG Engine.passfail] No label GET blazedemo  in dict_keys(['GET index page', 'POST purchase confirmation', 'POST purchase flight', 'POST reserve flight', 'GET vacation page', 'GET login page', 'GET blazedemo', ''])
+[2020-12-21 17:48:38,462 DEBUG Engine.passfail] No label POST purchase flight  in dict_keys(['GET index page', 'POST purchase confirmation', 'POST purchase flight', 'POST reserve flight', 'GET vacation page', 'GET login page', 'GET blazedemo', ''])
+[2020-12-21 17:48:38,462 DEBUG Engine.passfail] No label GET login page  in dict_keys(['GET index page', 'POST purchase confirmation', 'POST purchase flight', 'POST reserve flight', 'GET vacation page', 'GET login page', 'GET blazedemo', ''])
+[2020-12-21 17:48:38,462 DEBUG Engine.consolidator] Processed datapoint: 1608594512/ConsolidatingAggregator@140106631806704
+[2020-12-21 17:48:38,462 DEBUG Engine.consolidator] Merging into 1608594513
+[2020-12-21 17:48:38,462 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2020-12-21 17:48:38,545 DEBUG Engine.passfail] 1608594513 Alert: avg-rt>1000ms for -9223372036854775806 sec: False
+[2020-12-21 17:48:38,545 DEBUG Engine.passfail] No label GET blazedemo  in dict_keys(['GET index page', 'POST purchase flight', 'GET vacation page', 'POST purchase confirmation', 'GET blazedemo', ''])
+[2020-12-21 17:48:38,545 DEBUG Engine.passfail] No label POST purchase flight  in dict_keys(['GET index page', 'POST purchase flight', 'GET vacation page', 'POST purchase confirmation', 'GET blazedemo', ''])
+[2020-12-21 17:48:38,545 DEBUG Engine.passfail] No label GET login page  in dict_keys(['GET index page', 'POST purchase flight', 'GET vacation page', 'POST purchase confirmation', 'GET blazedemo', ''])
+[2020-12-21 17:48:38,545 DEBUG Engine.consolidator] Processed datapoint: 1608594513/ConsolidatingAggregator@140106631806704
+[2020-12-21 17:48:38,545 DEBUG Engine.consolidator] Merging into 1608594514
+[2020-12-21 17:48:38,546 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2020-12-21 17:48:38,636 DEBUG Engine.passfail] 1608594514 Alert: avg-rt>1000ms for 1 sec: True
+[2020-12-21 17:48:38,636 DEBUG Engine.passfail] No label GET blazedemo  in dict_keys(['GET index page', 'GET vacation page', 'POST reserve flight', 'POST purchase confirmation', 'GET blazedemo', 'GET login page', ''])
+[2020-12-21 17:48:38,636 DEBUG Engine.passfail] No label POST purchase flight  in dict_keys(['GET index page', 'GET vacation page', 'POST reserve flight', 'POST purchase confirmation', 'GET blazedemo', 'GET login page', ''])
+[2020-12-21 17:48:38,636 DEBUG Engine.passfail] No label GET login page  in dict_keys(['GET index page', 'GET vacation page', 'POST reserve flight', 'POST purchase confirmation', 'GET blazedemo', 'GET login page', ''])
+[2020-12-21 17:48:38,636 DEBUG Engine.consolidator] Processed datapoint: 1608594514/ConsolidatingAggregator@140106631806704
+[2020-12-21 17:48:38,636 INFO Engine.final-stats] Test duration: 0:01:17
+[2020-12-21 17:48:38,637 INFO Engine.final-stats] Samples count: 1247, 0.00% failures
+[2020-12-21 17:48:38,637 INFO Engine.final-stats] Average times: total 0.726, latency 0.116, connect 0.018
+[2020-12-21 17:48:38,638 INFO Engine.final-stats] Percentiles:
+(0lqqqqqqqqqqqqqqqwqqqqqqqqqqqqqqqk(B
+(0x(B Percentile, % (0x(B Resp. Time, s (0x(B
+(0tqqqqqqqqqqqqqqqnqqqqqqqqqqqqqqqu(B
+(0x(B           0.0 (0x(B         0.203 (0x(B
+(0x(B          50.0 (0x(B         0.544 (0x(B
+(0x(B          90.0 (0x(B         1.327 (0x(B
+(0x(B          95.0 (0x(B         1.626 (0x(B
+(0x(B          99.0 (0x(B         2.436 (0x(B
+(0x(B          99.9 (0x(B         4.828 (0x(B
+(0x(B         100.0 (0x(B          6.02 (0x(B
+(0mqqqqqqqqqqqqqqqvqqqqqqqqqqqqqqqj(B
+[2020-12-21 17:48:38,641 INFO Engine.final-stats] Request label stats:
+(0lqqqqqqqqqqqqqqqqqqqqqqqqqqqqwqqqqqqqqwqqqqqqqqqwqqqqqqqqwqqqqqqqk(B
+(0x(B label                      (0x(B status (0x(B    succ (0x(B avg_rt (0x(B error (0x(B
+(0tqqqqqqqqqqqqqqqqqqqqqqqqqqqqnqqqqqqqqnqqqqqqqqqnqqqqqqqqnqqqqqqqu(B
+(0x(B GET blazedemo              (0x(B   OK   (0x(B 100.00% (0x(B  1.236 (0x(B       (0x(B
+(0x(B GET index page             (0x(B   OK   (0x(B 100.00% (0x(B  0.474 (0x(B       (0x(B
+(0x(B GET login page             (0x(B   OK   (0x(B 100.00% (0x(B  1.199 (0x(B       (0x(B
+(0x(B GET vacation page          (0x(B   OK   (0x(B 100.00% (0x(B  0.877 (0x(B       (0x(B
+(0x(B POST purchase confirmation (0x(B   OK   (0x(B 100.00% (0x(B  0.456 (0x(B       (0x(B
+(0x(B POST purchase flight       (0x(B   OK   (0x(B 100.00% (0x(B  0.408 (0x(B       (0x(B
+(0x(B POST reserve flight        (0x(B   OK   (0x(B 100.00% (0x(B  0.408 (0x(B       (0x(B
+(0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqvqqqqqqqqvqqqqqqqqqvqqqqqqqqvqqqqqqqj(B
+[2020-12-21 17:48:38,641 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2020-12-21 17:48:38,641 DEBUG Engine.passfail] 1608594514 Alert: avg-lt>2 for -9223372036854775806 sec: False
+[2020-12-21 17:48:38,641 WARNING Engine.passfail] Alert: stdev-rt>0.5 for 1 sec
+[2020-12-21 17:48:38,642 DEBUG Engine.passfail] 1608594514 Failed: stdev-rt>0.5 for 1 sec: True
+[2020-12-21 17:48:38,642 WARNING Engine.passfail] Failed: stdev-rt>0.5 for 1 sec
+[2020-12-21 17:48:38,642 DEBUG Engine] post_process: Failed: stdev-rt>0.5 for 1 sec
+[2020-12-21 17:48:38,642 INFO Engine.final-stats] Test duration: 0:01:17
+[2020-12-21 17:48:38,643 INFO Engine.final-stats] Samples count: 1247, 0.00% failures
+[2020-12-21 17:48:38,643 INFO Engine.final-stats] Average times: total 0.726, latency 0.116, connect 0.018
+[2020-12-21 17:48:38,644 INFO Engine.final-stats] Percentiles:
+(0lqqqqqqqqqqqqqqqwqqqqqqqqqqqqqqqk(B
+(0x(B Percentile, % (0x(B Resp. Time, s (0x(B
+(0tqqqqqqqqqqqqqqqnqqqqqqqqqqqqqqqu(B
+(0x(B           0.0 (0x(B         0.203 (0x(B
+(0x(B          50.0 (0x(B         0.544 (0x(B
+(0x(B          90.0 (0x(B         1.327 (0x(B
+(0x(B          95.0 (0x(B         1.626 (0x(B
+(0x(B          99.0 (0x(B         2.436 (0x(B
+(0x(B          99.9 (0x(B         4.828 (0x(B
+(0x(B         100.0 (0x(B          6.02 (0x(B
+(0mqqqqqqqqqqqqqqqvqqqqqqqqqqqqqqqj(B
+[2020-12-21 17:48:38,646 INFO Engine.final-stats] Request label stats:
+(0lqqqqqqqqqqqqqqqqqqqqqqqqqqqqwqqqqqqqqwqqqqqqqqqwqqqqqqqqwqqqqqqqk(B
+(0x(B label                      (0x(B status (0x(B    succ (0x(B avg_rt (0x(B error (0x(B
+(0tqqqqqqqqqqqqqqqqqqqqqqqqqqqqnqqqqqqqqnqqqqqqqqqnqqqqqqqqnqqqqqqqu(B
+(0x(B GET blazedemo              (0x(B   OK   (0x(B 100.00% (0x(B  1.236 (0x(B       (0x(B
+(0x(B GET index page             (0x(B   OK   (0x(B 100.00% (0x(B  0.474 (0x(B       (0x(B
+(0x(B GET login page             (0x(B   OK   (0x(B 100.00% (0x(B  1.199 (0x(B       (0x(B
+(0x(B GET vacation page          (0x(B   OK   (0x(B 100.00% (0x(B  0.877 (0x(B       (0x(B
+(0x(B POST purchase confirmation (0x(B   OK   (0x(B 100.00% (0x(B  0.456 (0x(B       (0x(B
+(0x(B POST purchase flight       (0x(B   OK   (0x(B 100.00% (0x(B  0.408 (0x(B       (0x(B
+(0x(B POST reserve flight        (0x(B   OK   (0x(B 100.00% (0x(B  0.408 (0x(B       (0x(B
+(0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqvqqqqqqqqvqqqqqqqqqvqqqqqqqqvqqqqqqqj(B
+[2020-12-21 17:48:38,646 INFO Engine.final-stats] Dumping final status as CSV: performance_test_csv_output.csv
+[2020-12-21 17:48:39,068 DEBUG Engine.Configuration] Dumping YAML config into /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/effective.yml
+[2020-12-21 17:48:39,098 DEBUG Engine.Configuration] Dumping JSON config into /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/effective.json
+[2020-12-21 17:48:39,100 WARNING root] Automated shutdown
+[2020-12-21 17:48:39,142 DEBUG root] AutomatedShutdown: Failed: stdev-rt>0.5 for 1 sec
+  File "/usr/local/lib/python3.6/dist-packages/bzt/cli.py", line 269, in perform
+    self.engine.post_process()
+  File "/usr/local/lib/python3.6/dist-packages/bzt/engine/engine.py", line 354, in post_process
+    reraise(exc_info, exc_value)
+  File "/usr/local/lib/python3.6/dist-packages/bzt/utils.py", line 103, in reraise
+    raise exc
+  File "/usr/local/lib/python3.6/dist-packages/bzt/engine/engine.py", line 340, in post_process
+    module.post_process()
+  File "/usr/local/lib/python3.6/dist-packages/bzt/modules/passfail.py", line 135, in post_process
+    processor.post_process()
+  File "/usr/local/lib/python3.6/dist-packages/bzt/modules/passfail.py", line 97, in post_process
+    raise AutomatedShutdown("%s" % crit)
+[2020-12-21 17:48:39,142 INFO root] Artifacts dir: /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095
+[2020-12-21 17:48:39,142 WARNING root] Done performing with code: 3
+[2020-12-21 17:48:39,142 DEBUG root] Closing log handler: /home/ivan/taurus-load-tests/2020-12-21_17-47-17.423095/bzt.log
